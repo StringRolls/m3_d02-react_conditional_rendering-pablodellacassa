@@ -9,17 +9,26 @@ import ImprovedMovieList from "./components/ImprovedMovieList";
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   // const [isLoading, setIsLoading] = useState(true);
-
+/* 
   if (isLoading) {
     return <Spinner />;
   } else {
     return (
       <div className="App">
-        {/* <MovieList /> */}
+        {/* <MovieList />}
         <ImprovedMovieList />
       </div>
     );
   }
+ */
+
+  // Short if statement 
+  // condition ? true : false 
+  return (
+  <div className="App">
+    { isLoading ? <Spinner/> : <ImprovedMovieList/> } 
+  </div>
+  )
 }
 
 export default App;
